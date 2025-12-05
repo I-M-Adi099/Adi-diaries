@@ -12,15 +12,36 @@ header {
     margin-bottom: 20px;
 }
 
+/* Desktop hover (normal) */
 nav a {
     color: #fff;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 12px;
+    position: relative;
+    padding: 4px 2px;
+    transition: all 0.25s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: cyan;
+    transition: width 0.25s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: cyan;
+    text-shadow: 0 0 6px cyan;
 }
+
+nav a:hover::after {
+    width: 100%;
+}
+
 
 main {
     max-width: 800px;
@@ -73,3 +94,28 @@ footer {
     font-size: 14px;
 }
 
+/* Mobile tap-friendly style */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+        padding: 10px 0;
+        font-size: 18px;
+        text-align: center;
+        text-shadow: none; /* remove glow on mobile */
+        border-radius: 6px;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    /* Replace hover with a soft highlight */
+    nav a:active,
+    nav a:focus {
+        background-color: rgba(0, 255, 255, 0.25);
+        color: cyan;
+    }
+
+    /* Disable the underline animation on mobile */
+    nav a::after {
+        display: none;
+    }
+}
