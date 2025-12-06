@@ -58,6 +58,16 @@ main {
     line-height: 1.5;
 }
 
+.boxes img {
+    width: 100%;
+    max-width: 300px; /* adjust this number as you like */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+}
+
+
 .topics {
     font-family: consolas, sans-serif;
     color: white;
