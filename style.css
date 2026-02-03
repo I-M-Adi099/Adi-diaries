@@ -73,6 +73,10 @@ main {
     color: white;
 }
 
+h2 {
+    text-align: center;
+}
+
 footer {
     font-family: consolas;
     margin-top: 30px;
@@ -128,4 +132,20 @@ footer {
     nav a::after {
         display: none;
     }
+}
+
+/*for Program page*/
+.program-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
 }
