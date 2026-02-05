@@ -91,10 +91,6 @@ main {
     box-shadow: 0 0 6px cyan;
 }
 
-.button-text {
-    text-align: center;
-}
-
 footer {
     font-family: consolas;
     margin-top: 30px;
@@ -150,30 +146,4 @@ footer {
     nav a::after {
         display: none;
     }
-}
-
-/*for Program page*/
-.program-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 25px;
-}
-
-.program-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.project-links a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 14px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    background-color: cyan;
-    color: black;
 }
