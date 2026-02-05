@@ -71,9 +71,27 @@ main {
 .topics {
     font-family: consolas, sans-serif;
     color: white;
+    text-align: center;
 }
 
-h2 {
+.buttons {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 0.5;
+    /* adjust the width number as 50% after you figure out how to center a div */
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.buttons:hover {
+    border-color: cyan;
+    transition: width 0.25s ease;
+    box-shadow: 0 0 6px cyan;
+}
+
+.button-text {
     text-align: center;
 }
 
@@ -135,6 +153,14 @@ footer {
 }
 
 /*for Program page*/
+.program-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
 .program-card img {
     width: 100%;
     border-radius: 10px;
@@ -148,4 +174,6 @@ footer {
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
+    background-color: cyan;
+    color: black;
 }
